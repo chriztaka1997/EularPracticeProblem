@@ -17,5 +17,6 @@ def problem3(num):
     largest = 0
     for i in range(1, int(num**0.5)):
         if num % i == 0:
-            if is_prime(i): largest = i
+            if is_prime(i):
+                largest = i
     return largest
