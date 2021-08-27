@@ -4,6 +4,8 @@
 #
 ####################################
 import math
+
+
 def problem8(adjacent):
 
     num = '73167176531330624919225119674426574742355349194934'\
@@ -29,7 +31,7 @@ def problem8(adjacent):
 
     largest_prod = 0
     for i in range(len(num) - adjacent + 1):
-        ans = list(map(int, num[i : (i + adjacent)]))
+        ans = list(map(int, num[i: (i + adjacent)]))
         ans = math.prod(ans)
         if largest_prod < ans:
             largest_prod = ans
