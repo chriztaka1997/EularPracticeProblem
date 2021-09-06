@@ -8,7 +8,7 @@ def problem12():
     
     def divisors(number):
         number_of_divisor = 0
-        for i in range(1, int(number**0.5) + 1):
+        for i in range(1, number + 1):
             if number % i == 0:
                 number_of_divisor += 1
         return number_of_divisor
