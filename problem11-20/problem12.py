@@ -3,7 +3,7 @@
 # Highly divisible triangular number
 #
 ################################
-
+# TODO: RuntimeError: Exceeded runtime
 def problem12():
     
     def divisors(number):
