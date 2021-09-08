@@ -21,3 +21,5 @@ def problem10():
         if is_prime(i):
             total += i
     return total
+
+print(problem10())

@@ -22,3 +22,5 @@ def problem2():
             total += last_one+last_two
         last_two, last_one = switch(last_two, last_one)
     return total
+
+print(problem2())

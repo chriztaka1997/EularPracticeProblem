@@ -5,7 +5,9 @@
 # What is the largest prime factor of the number 600851475143 ?
 #
 #####################################
-def problem3(num):
+def problem3():
+    number = 600851475143
+
     def is_prime(num):
         if num > 1:
             for i in range(2, num):
@@ -16,8 +18,10 @@ def problem3(num):
             return False
 
     largest = 0
-    for i in range(1, int(num**0.5)):
-        if num % i == 0:
+    for i in range(1, int(number**0.5)):
+        if number % i == 0:
             if is_prime(i):
                 largest = i
     return largest
+
+print(problem3())

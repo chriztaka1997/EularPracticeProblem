@@ -3,10 +3,11 @@
 # Largest product in a series
 #
 ####################################
-import math
+import numpy as np
 
 
-def problem8(adjacent):
+def problem8():
+    adjacent = 13
 
     num = '73167176531330624919225119674426574742355349194934'\
           '96983520312774506326239578318016984801869478851843'\
@@ -32,7 +33,9 @@ def problem8(adjacent):
     largest_prod = 0
     for i in range(len(num) - adjacent + 1):
         ans = list(map(int, num[i: (i + adjacent)]))
-        ans = math.prod(ans)
+        ans = np.prod(ans)
         if largest_prod < ans:
             largest_prod = ans
     return largest_prod
+
+print(problem8())

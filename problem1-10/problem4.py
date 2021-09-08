@@ -1,14 +1,11 @@
 #####################################
 #
-# A palindromic number reads the same both ways.
-# The largest palindrome made from the product of
-# two 2-digit numbers is 9009 = 91 × 99.
-# Find the largest palindrome made from the product of two 3-digit numbers.
+# Largest palindrome product
 #
 #####################################
 def problem4():
 
-    def isPalindrome(num: str):
+    def isPalindrome(num ):
         return num == num[::-1]
 
     max_num = [0, 0]
@@ -21,3 +18,5 @@ def problem4():
                     max_num[0] = i
                     max_num[1] = j
     return max_pal
+
+print(problem4())

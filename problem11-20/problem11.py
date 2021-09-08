@@ -44,3 +44,5 @@ def problem11():
                 if (row + ADJACENT <= len(GRID)) and (column - ADJACENT <= len(GRID[0])):
                     ans = max(prod_direction(column, row, -1, 1), ans)
     return ans
+
+print(problem11())
