@@ -9,4 +9,5 @@ def problem6():
     square_of_sum = sum([i for i in range(1, num + 1)])**2
     return square_of_sum - sum_of_square
 
+
 print(problem6())

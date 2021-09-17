@@ -11,4 +11,5 @@ def problem9():
             if a**2 + b**2 == c and a + b + c**0.5 == num:
                 return int(a*b*(c**0.5))
 
+
 print(problem9())

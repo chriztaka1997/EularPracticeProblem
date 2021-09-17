@@ -12,4 +12,5 @@ def problem1():
                 if((x % 3 == 0) or
                 (x % 5 == 0))])
 
+
 print(problem1())

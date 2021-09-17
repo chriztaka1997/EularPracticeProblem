@@ -30,4 +30,5 @@ def problem7():
         current_int += 1
     return current_int - 1
 
+
 print(problem7())

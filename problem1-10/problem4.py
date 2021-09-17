@@ -5,7 +5,7 @@
 #####################################
 def problem4():
 
-    def isPalindrome(num ):
+    def isPalindrome(num):
         return num == num[::-1]
 
     max_num = [0, 0]
@@ -18,5 +18,6 @@ def problem4():
                     max_num[0] = i
                     max_num[1] = j
     return max_pal
+
 
 print(problem4())

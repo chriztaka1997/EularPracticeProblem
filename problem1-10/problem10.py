@@ -22,4 +22,5 @@ def problem10():
             total += i
     return total
 
+
 print(problem10())

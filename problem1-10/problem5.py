@@ -16,4 +16,5 @@ def problem5():
         ans *= i//math.gcd(i, ans)
     return ans
 
+
 print(problem5())
