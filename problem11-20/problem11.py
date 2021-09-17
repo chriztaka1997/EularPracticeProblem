@@ -4,7 +4,7 @@
 #
 ####################################
 def problem11():
-    
+
     def prod_direction(x_position, y_position, x_direction, y_direction):
         ans = 1
         for i in range(ADJACENT):
@@ -35,14 +35,15 @@ def problem11():
     ans = 0
     for row in range(len(GRID)):
         for column in range(len(GRID[0])):
-                if column + ADJACENT <= len(GRID[0]):
-                    ans = max(prod_direction(column, row, 1, 0), ans)
-                if row + ADJACENT <= len(GRID):
-                    ans = max(prod_direction(column, row, 0, 1), ans)
-                if (row + ADJACENT <= len(GRID)) and (column + ADJACENT <= len(GRID[0])):
-                    ans = max(prod_direction(column, row, 1, 1), ans)
-                if (row + ADJACENT <= len(GRID)) and (column - ADJACENT <= len(GRID[0])):
-                    ans = max(prod_direction(column, row, -1, 1), ans)
+            if column + ADJACENT <= len(GRID[0]):
+                ans = max(prod_direction(column, row, 1, 0), ans)
+            if row + ADJACENT <= len(GRID):
+                ans = max(prod_direction(column, row, 0, 1), ans)
+            if (row + ADJACENT <= len(GRID)) and (column + ADJACENT <= len(GRID[0])):
+                ans = max(prod_direction(column, row, 1, 1), ans)
+            if (row + ADJACENT <= len(GRID)) and (column - ADJACENT <= len(GRID[0])):
+                ans = max(prod_direction(column, row, -1, 1), ans)
     return ans
+
 
 print(problem11())

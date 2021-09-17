@@ -3,7 +3,7 @@
 # Longest Collatz sequence
 #
 ################################
-#TODO: Runtime Exceeded
+# TODO: Runtime Exceeded
 def problem14():
 
     def collatz(num):
@@ -14,7 +14,7 @@ def problem14():
                 copy_num /= 2
             else:
                 copy_num = 3 * copy_num + 1
-            
+
             list_of_collatz.append(copy_num)
 
         return len(list_of_collatz)
@@ -22,7 +22,8 @@ def problem14():
     max_num_sequence = 0
     for number in range(1000000):
         max_num_sequence = max(max_num_sequence, collatz(number))
-    
+
     return max_num_sequence
+
 
 print(problem14())

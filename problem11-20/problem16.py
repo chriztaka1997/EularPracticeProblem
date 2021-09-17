@@ -8,4 +8,5 @@ def problem16():
     list_int = [int(digit) for digit in str(value_int)]
     return sum(list_int)
 
+
 print(problem16())
