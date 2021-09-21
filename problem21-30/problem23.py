@@ -3,7 +3,7 @@
 # Non abundant Sum
 #
 ##########################
-# TOOO: Runtime exceeded, solution might be wrong
+# TODO: Runtime exceeded, solution might be wrong
 def problem23():
 
     def list_divisor(num):
